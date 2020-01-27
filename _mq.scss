@@ -1,8 +1,23 @@
+// MQ - Media queries library 
+
 //
-// Media query mixin
+// Breakpoints list
+// Name your breakpoints in a way that communicates devices sizes
+// You could change these default values with your owns
 //
 
-@import 'lib/settings'
+$breakpoints: (
+  'small': 480px,
+  'medium': 740px,
+  'large': 992px,
+  'xlarge': 1200px
+);
+
+
+//
+// Breakpoint mixin
+// Default setting is set to min-midth
+// 
 
 @mixin bp($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
