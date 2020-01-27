@@ -2,6 +2,8 @@
 // Media query mixin
 //
 
+@import 'lib/settings'
+
 @mixin bp($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     $breakpoint-value: map-get($breakpoints, $breakpoint);
